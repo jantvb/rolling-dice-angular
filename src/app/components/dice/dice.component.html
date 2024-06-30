@@ -1,0 +1,8 @@
+<div class="dice">
+    <div class="dice-inner">
+        <div
+        *ngFor="let dotClass of getDiceClasses()"
+        class="dot"
+        [ngClass]="dotClass">
+    </div>
+</div>

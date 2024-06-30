@@ -1,0 +1,58 @@
+.dice {
+    border: 1px solid black;
+    padding: 25px;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 15px;
+}
+
+.dice-inner {
+    height: 100%;
+    position: relative;
+}
+
+.dot {
+    border-radius: 50%;
+    background-color: black;
+    height: 15px;
+    width: 15px;
+    position: absolute;
+}
+
+.center {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.top-right {
+    top: 0;
+    right: 0;
+}
+
+.top-left {
+    top: 0;
+    left: 0;
+}
+
+.bottom-left { 
+    bottom: 0;
+    left: 0;
+}
+
+.bottom-right {
+    bottom: 0;
+    right: 0;
+}
+
+.middle-left {
+    top: 50%;
+    left: 0;
+    transform: translate(0, -50%);
+}
+
+.middle-right {
+    top: 50%;
+    right: 0;
+    transform: translate(0, -50%);
+}

@@ -1,0 +1,11 @@
+<div class="form-container">
+    <form [formGroup]="form" class="dice-form">
+        <label for="numberOfDice">Number of dice</label>
+        <input 
+            id="numberofDice"
+            formControlName="numberOfDice"
+            type="number">
+        <button (click)="rollDice()">Roll</button>
+    </form>
+</div>
+
