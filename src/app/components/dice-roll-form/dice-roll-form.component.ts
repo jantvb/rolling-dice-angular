@@ -17,13 +17,17 @@ export class DiceRollFormComponent implements OnInit {
   ngOnInit(): void {
     this.form = this.fb.group({
       numberOfDice: [0, [
-        Validators.required
+        Validators.required,
+        Validators.max(99),
+        Validators.min(1)
       ]]
     })
   }
 
   rollDice() {
-    this.onRollDice.emit(this.form.get('numberOfDice')?.value);
+    if (this.form.valid) {
+      this.onRollDice.emit(this.form.get('numberOfDice')?.value);
+    }
   }
 
 }
